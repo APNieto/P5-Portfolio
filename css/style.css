@@ -1,3 +1,7 @@
-/* html, body {
-    scroll-behavior: smooth!important;
-} */
+._aBackToTop {        
+    align-self: center;
+    padding: 6px;
+    font-size: 0.85rem;
+    position: relative;
+    bottom: -1px;
+}
