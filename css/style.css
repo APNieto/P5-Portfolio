@@ -1,3 +1,18 @@
+body {
+    background-color: hwb(352 98% 2%);
+}
+
+.navbar {
+    background-color: #f8eade!important;
+    position: sticky!important;
+    top: 0px;
+    z-index: 1;
+}
+
+.navbar-brand {
+    color: #c02f78;
+}
+
 ._aBackToTop {        
     align-self: center;
     padding: 6px;

@@ -1,1 +1,0 @@
-Alle wichtigen Tags müssen innerhalb eines Bootstrap containers Classes sein, mit ihren jeweiligen grid System Classes.
