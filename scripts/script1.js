@@ -4,13 +4,13 @@ $(document).ready(function() {
         $("a").click(function(event) {
             $("html, body").animate({            
                     scrollTop: $($(this).attr("href")).offset().top - 58
-                }, 650);
+                }, 300);
             });           
     } else {
         $("a").click(function(event) {
             $("html, body").animate({            
                     scrollTop: $($(this).attr("href")).offset().top - 186
-                }, 650);
+                }, 300);
             });           
     }
     
