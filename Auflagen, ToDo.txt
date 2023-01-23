@@ -1,3 +1,0 @@
-1. Hacer 2da versión con sección portfolio usando carousel
-
-Alle wichtigen Tags müssen innerhalb eines Bootstrap containers Classes sein, mit ihren jeweiligen grid System Classes.

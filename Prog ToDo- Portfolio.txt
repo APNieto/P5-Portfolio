@@ -1,0 +1,16 @@
+.Remove "back to tops", emojis  X
+
+.Make navbar reduce itself when scrolling down
+    See: https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp
+
+.Add 2 more projects with their thumbnails
+
+.Change About me text
+
+.Contact form
+
+.Enable social contact points using i tags with Font Awesome links
+
+.Check footer/copyright notes  X
+
+.More space in general for each section, imitating https://startbootstrap.com/previews/freelancer

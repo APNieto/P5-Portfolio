@@ -3,24 +3,14 @@
     --color-navbar-background: #f8eade;
     --color-profile: rgb(63,57,67)
 }
-
 body {
+    margin: 0;
     background-color: var(--color-general-background);
 }
-
-._aBackToTop {        
-    align-self: center;
-    padding: 6px;
-    font-size: 0.85rem;
-    position: relative;
-    bottom: -1px;
-}
-
 
 
 
 /* Navbar */
-
 .navbar {
     background-color: var(--color-navbar-background)!important;
     position: sticky!important;
@@ -34,13 +24,10 @@ body {
 
 
 
-
 /* Presentation header */
-
 ._presentationHeader {
     align-items: center;
 }
-
 ._presentationHeader > img {        
     margin-top: 30px;    
     border: 2px solid rgb(63,57,67);
@@ -48,21 +35,12 @@ body {
     box-shadow: 2px 2px 0px rgb(255, 169, 99), 4px 4px 0px red;     
 }
 
-._emoji {
-    font-size: 70%;
-    position: relative;
-    bottom: 3px;;
-}
-
-
 
 
 /* Portfolio main */
-
 ._portfolio .col-sm{
     text-align: center;
 }
-
 ._portfolio-image {
     border: 0px solid #000;
     border-radius: 8%;
@@ -71,9 +49,22 @@ body {
 
 
 
-
 /* About me article */
 
-._bird-emoji {
-    font-size: 1.2rem;
+
+
+/* Contact form */
+
+
+
+/* Footer social */
+#_social a{
+    text-decoration: none;
+}
+
+
+
+/* Copyright */
+#_copyright{
+    background-color: rgb(63, 57, 67);
 }
