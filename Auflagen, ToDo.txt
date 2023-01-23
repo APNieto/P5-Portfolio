@@ -1,6 +1,3 @@
-1. Eine cremige Farbe als Hintergrundfarbe feststellen  DONE
-2. Add a border and boxshadow to the navbar
-3. Add the header/presentation card link to the navbar
-
+1. Hacer 2da versión con sección portfolio usando carousel
 
 Alle wichtigen Tags müssen innerhalb eines Bootstrap containers Classes sein, mit ihren jeweiligen grid System Classes.

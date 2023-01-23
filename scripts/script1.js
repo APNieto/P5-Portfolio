@@ -10,11 +10,12 @@ $(document).ready(function() {
         $("a").click(function(event) {
             $("html, body").animate({            
                     scrollTop: $($(this).attr("href")).offset().top - 186
-                }, 300);
-            });           
+                }, 180, "linear");
+            });    
     }
+
+
     
 });   
 // Source for scrolling animation:
 // https://www.w3docs.com/snippets/javascript/how-to-create-smooth-scrolling-when-clicking-an-anchor-link.html
-

@@ -1,0 +1,11 @@
+celeste cielo: rgb(173, 213, 248)
+
+marrón campera: rgb(91, 80, 88)
+
+bufanda oscuro: rgb(50, 53, 62)
+
+bufanda claro: rgb(194, 204, 206)
+
+celeste agua: rgb(133, 170, 189)
+
+verde árboles: rgb(93, 107, 90)
