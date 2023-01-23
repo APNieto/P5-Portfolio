@@ -9,7 +9,7 @@
 
 .Contact form
 
-.Enable social contact points using i tags with Font Awesome links
+.Enable social contact points using i tags with Font Awesome links  X
 
 .Check footer/copyright notes  X
 
