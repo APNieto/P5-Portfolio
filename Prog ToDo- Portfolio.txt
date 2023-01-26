@@ -1,9 +1,12 @@
 .Remove "back to tops", emojis  X
 
-.Make navbar reduce itself when scrolling down
+.Make navbar reduce itself when scrolling down  X
     See: https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp
 
 .Add 2 more projects with their thumbnails
+
+.Add entry-from-left animation to portfolio links
+    See: https://www.youtube.com/watch?v=T33NN_pPeNI
 
 .Change About me text
 
