@@ -38,7 +38,7 @@ body {
 
 /* Presentation header */
 ._presentationHeader {
-    padding: 140px 0 400px 0;
+    padding: 140px 0 100px 0;
     align-items: center;
 }
 ._presentationHeader > img {        

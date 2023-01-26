@@ -1,4 +1,4 @@
-// Elements
+// ELEMENTS
 const _navbar = document.getElementById('_navbar')
 const navbarBrand = document.getElementsByClassName('navbar-brand')[0]
 const navLink = document.getElementsByClassName('nav-link')
@@ -7,8 +7,8 @@ const projectBoxes = document.getElementsByClassName('_project-boxes-invisible')
 const copyright = document.getElementById('_copyright')     //TEST
 
 
-// Event listeners
 
+// EVENT LISTENERS
 // Diminishes/re-establishes navbar size on scroll
 window.onscroll = function(event) {
     if(document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
@@ -22,6 +22,7 @@ window.onscroll = function(event) {
     }    
 }
 
+// Translates and fades in project boxes from the left side
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -34,17 +35,6 @@ const observer = new IntersectionObserver(entries => {
 }, {root: null, rootMargin: '0px', threshold: 1.0})
 for (let box of projectBoxes) {observer.observe(box)}
 
-
-//TEST
-// document.getElementById('test-button').onclick = function() {
-//     projectBoxes.forEach((element, index, array) => {
-//         array[index].classList.toggle('_project-boxes-invisible')
-//         console.log(array[index]);
-//     })
-//     // for (box of projectBoxes) {
-//     //     box.classList.toggle('_project-boxes-invisible')
-//     // }
-// }
 
 
 
