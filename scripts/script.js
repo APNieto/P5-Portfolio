@@ -44,7 +44,7 @@ const observerNarrowScreen = new IntersectionObserver(entries => {
                 projectBoxes[i].classList.add('_project-boxes-invisible')
             }            
         }})     
-}, {root: null, rootMargin: '0px', threshold: 0.20})
+}, {root: null, rootMargin: '0px', threshold: 0.12})
 
 if (window.innerWidth <= 575) {
     observerNarrowScreen.observe(projectsContainer)

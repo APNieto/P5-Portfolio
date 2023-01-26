@@ -5,7 +5,7 @@
 
 .Add 2 more projects with their thumbnails
 
-.Add entry-from-left animation to portfolio links
+.Add entry-from-left animation to portfolio links  X
     See: https://www.youtube.com/watch?v=T33NN_pPeNI
 
 .Change About me text
@@ -19,3 +19,5 @@
 .More space in general for each section, imitating https://startbootstrap.com/previews/freelancer
 
 .Favicon
+
+.Font
