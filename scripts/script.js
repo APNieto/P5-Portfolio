@@ -3,7 +3,7 @@ const _navbar = document.getElementById('_navbar')
 const navbarBrand = document.getElementsByClassName('navbar-brand')[0]
 const navLink = document.getElementsByClassName('nav-link')
 const projectsContainer = document.getElementById('_projects-container')
-const projectBoxes = document.getElementsByClassName('_project-boxes-invisible')
+const projectBoxes = document.getElementsByClassName('_project-boxes')
 const copyright = document.getElementById('_copyright')     //TEST
 
 
@@ -22,18 +22,35 @@ window.onscroll = function(event) {
     }    
 }
 
-// Translates and fades in project boxes from the left side
-const observer = new IntersectionObserver(entries => {
+// Translates and fades in project boxes from the left side; responsive
+const observerLargeScreen = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.remove('_project-boxes-invisible')
-            console.log('in');
         } else {
             entry.target.classList.add('_project-boxes-invisible')
-            console.log('out');
         }})    
 }, {root: null, rootMargin: '0px', threshold: 1.0})
-for (let box of projectBoxes) {observer.observe(box)}
+
+const observerNarrowScreen = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            for (let i = 0; i < projectBoxes.length; i++) {
+                console.log('Narrow screen intersecting projects container');
+                projectBoxes[i].classList.remove('_project-boxes-invisible')
+            }            
+        } else {
+            for (let i = 0; i < projectBoxes.length; i++) {
+                projectBoxes[i].classList.add('_project-boxes-invisible')
+            }            
+        }})     
+}, {root: null, rootMargin: '0px', threshold: 0.20})
+
+if (window.innerWidth <= 575) {
+    observerNarrowScreen.observe(projectsContainer)
+} else {
+    for (let box of projectBoxes) {observerLargeScreen.observe(box)}
+}
 
 
 
