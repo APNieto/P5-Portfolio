@@ -89,6 +89,12 @@ body {
     filter: blur(5px);
     opacity: 0; 
 }
+._project-boxes figure{
+    transition: 200ms;
+}
+._project-boxes figure:hover{
+    transform: scale(1.07);
+}
 
 @media (max-width: 768px){
     ._project-boxes:nth-child(2){

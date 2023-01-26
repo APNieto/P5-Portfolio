@@ -30,7 +30,7 @@ const observerLargeScreen = new IntersectionObserver(entries => {
         } else {
             entry.target.classList.add('_project-boxes-invisible')
         }})    
-}, {root: null, rootMargin: '0px', threshold: 1.0})
+}, {root: null, rootMargin: '0px', threshold: 0.7})
 
 const observerNarrowScreen = new IntersectionObserver(entries => {
     entries.forEach(entry => {

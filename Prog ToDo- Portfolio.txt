@@ -1,3 +1,6 @@
+Pledu:
+https://pledu.plataforma5.la/curso-introductorio---front-end/06--proyecto*-tu-portfolio/estructura-general-87fc2394
+
 .Remove "back to tops", emojis  X
 
 .Make navbar reduce itself when scrolling down  X
@@ -21,3 +24,5 @@
 .Favicon
 
 .Font
+
+.Quality of profile picture
