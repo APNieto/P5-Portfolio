@@ -124,12 +124,22 @@
 
     <form id="_contact-form" class="d-flex flex-column" action="">
         <h2>Drop me a line or two!</h2>
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="text">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" cols="30" rows="10"></textarea>
+        <div id="_name-input" class="_input-div">
+            <input id="name" class="_input-element" name="name" type="text" placeholder="Enter your name...">
+            <label for="name" class="_input-label">Name</label>
+            <div class="_invalid-feedback">Please enter your name</div>
+        </div>
+        <div id="_email-input" class="_input-div">            
+            <input id="email" class="_input-element" name="email" type="text" placeholder="Enter your email address...">
+            <label for="email" class="_input-label">Email</label>
+            <div class="_invalid-feedback">Please enter your email address</div>
+        </div>
+        <div id="_message-input" class="_input-div">            
+            <textarea id="message" class="_input-element" name="message" cols="30" rows="10" placeholder="Enter your message..."></textarea>
+            <label for="message" class="_input-label">Message</label>
+            <div class="_invalid-feedback">Please enter a message</div>
+
+        </div>
     </form>
 
 

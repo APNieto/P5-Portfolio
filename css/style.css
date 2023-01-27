@@ -35,7 +35,6 @@ body {
 
 
 
-
 /* Presentation header */
 #_presentationHeader {
     background-color: rgba(117, 131, 126, 0.801);
@@ -133,7 +132,39 @@ body {
 }
 
 
+
 /* Contact form */
+#_contact-form{
+    text-align: center;
+}
+._input-div{
+    width: fit-content;
+    position: relative;
+    margin: 0 auto;
+}
+._input-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.1s, transform 0.1s;
+}
+._input-element{
+    background-color: var(--color-general-background);
+    border-style: none none solid none;
+    border-width: 1px;
+}
+._input-element:focus{
+    outline: none;
+}
+._input-element::placeholder{
+    opacity: 0;
+}
+._input-element:focus ~ label, ._input-element:not(:placeholder-shown) ~ label{
+    opacity: 0.7;
+    transform: scale(0.7) translateY(-1rem);
+}
+._invalid-feedback{
+}
 
 
 
