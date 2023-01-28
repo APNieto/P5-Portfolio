@@ -13,7 +13,7 @@ https://pledu.plataforma5.la/curso-introductorio---front-end/06--proyecto*-tu-po
 
 .Change About me text
 
-.Contact form
+.Contact form  X
 
 .Enable social contact points using i tags with Font Awesome links  X
 

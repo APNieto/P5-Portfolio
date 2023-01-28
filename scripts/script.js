@@ -1,9 +1,22 @@
 // ELEMENTS
+// Navbar
 const _navbar = document.getElementById('_navbar')
 const navbarBrand = document.getElementsByClassName('navbar-brand')[0]
 const navLink = document.getElementsByClassName('nav-link')
+// Portfolio
 const projectsContainer = document.getElementById('_projects-container')
 const projectBoxes = document.getElementsByClassName('_project-boxes')
+// Form
+const nameInput = document.getElementById('name')
+const nameInputInvalidMsg = document.getElementById('_invalid-name')
+const emailInput = document.getElementById('email')
+const emailInputInvalidMsg = document.getElementById('_invalid-email')
+const messageInput = document.getElementById('message')
+const messageInputInvalidMsg = document.getElementById('_invalid-message')
+const areInputsFilled = [false, false, false]
+const submitButton = document.getElementById('_submit-button')
+const thanksMessage = document.getElementById('_thanks-message')
+// Social / footer
 const copyright = document.getElementById('_copyright')     //TEST
 
 
@@ -51,6 +64,85 @@ if (window.innerWidth <= 575) {
 } else {
     for (let box of projectBoxes) {observerLargeScreen.observe(box)}
 }
+
+// Shows thank you message after submitting the form
+submitButton.addEventListener('click', () => {
+    thanksMessage.classList.remove('invisible')
+    nameInput.disabled = true
+    emailInput.disabled = true
+    messageInput.disabled = true
+})
+
+// Form validation: name and message input
+nameInput.oninput = () => {
+    if (nameInput.value.length > 0) {
+        areInputsFilled[0] = true
+        nameInput.classList.remove('_is-invalid')
+        nameInputInvalidMsg.classList.add('invisible')
+    } else {
+        areInputsFilled[0] = false
+        nameInput.classList.add('_is-invalid')
+        nameInputInvalidMsg.classList.remove('invisible')
+    }
+    checkInputValidity()
+}
+nameInput.onblur = () => {
+    if (nameInput.value.length == 0) {
+        nameInput.classList.add('_is-invalid')
+        nameInputInvalidMsg.classList.remove('invisible')
+    }    
+}
+// Form validation: email input
+const pattern = /[\w\.]+@\w+\.[a-z]{2,3}/i
+emailInput.oninput = () => {
+    if (emailInput.value.search(pattern) === 0) {
+        areInputsFilled[1] = true
+        emailInput.classList.remove('_is-invalid')
+        emailInputInvalidMsg.classList.add('invisible')
+    } 
+    checkInputValidity()
+}
+emailInput.onblur = () => {
+    if (emailInput.value.search(pattern) !== 0) {
+        emailInput.classList.add('_is-invalid')
+        emailInputInvalidMsg.classList.remove('invisible')
+    }
+}
+// Form validation: message input
+messageInput.oninput = () => {
+    if (messageInput.value.length > 0) {
+        areInputsFilled[2] = true
+        messageInput.classList.remove('_is-invalid')
+        messageInputInvalidMsg.classList.add('invisible')
+    } else {
+        areInputsFilled[2] = false
+        messageInput.classList.add('_is-invalid')
+        messageInputInvalidMsg.classList.remove('invisible')
+    }
+    checkInputValidity()
+}
+messageInput.onblur = () => {
+    if (messageInput.value.length == 0) {
+        messageInput.classList.add('_is-invalid')
+        messageInputInvalidMsg.classList.remove('invisible')
+    }
+}
+
+
+
+// FUNCTIONS
+// Check if all inputs are valid; if so, enable submit button
+function checkInputValidity() {
+    submitButton.disabled = false
+    for (let isInputFilled of areInputsFilled) {
+        if (isInputFilled == false) {
+            submitButton.disabled = true
+        }
+    }
+}
+
+
+
 
 
 
