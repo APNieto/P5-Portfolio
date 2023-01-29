@@ -6,7 +6,7 @@ https://pledu.plataforma5.la/curso-introductorio---front-end/06--proyecto*-tu-po
 .Make navbar reduce itself when scrolling down  X
     See: https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp
 
-.Add 2 more projects with their thumbnails
+.Add 2 more projects with their thumbnails  X
 
 .Add entry-from-left animation to portfolio links  X
     See: https://www.youtube.com/watch?v=T33NN_pPeNI
@@ -25,4 +25,8 @@ https://pledu.plataforma5.la/curso-introductorio---front-end/06--proyecto*-tu-po
 
 .Font
 
-.Quality of profile picture
+.Quality of profile picture  X
+
+.Mobile: remove extra room to the right
+
+.Create gifs for project thumbnails

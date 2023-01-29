@@ -1,0 +1,14 @@
+Typer-d
+.responsiveness
+
+
+Chilly Weather
+.overlapping of weather info on mobile
+
+
+Color game
+.alert text
+
+
+To-do list
+.Use local storage/session storage to save the list
