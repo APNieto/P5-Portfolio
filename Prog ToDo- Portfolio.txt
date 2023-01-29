@@ -33,4 +33,4 @@ https://pledu.plataforma5.la/curso-introductorio---front-end/06--proyecto*-tu-po
 
 .Make some texts non-selectable
 
-.Correct navbar scrolling, responsive
+.Correct navbar scrolling, responsive  X

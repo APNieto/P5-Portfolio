@@ -40,7 +40,9 @@ for (let navLink of navLinks) {
     navLink.addEventListener('click', (event) => {
         event.preventDefault()
         let targetElement = document.querySelector(navLink.hash)
-        let navbarHeight = document.getElementById('_navbar').offsetHeight
+        let navbarHeight
+        if (window.innerWidth < 992) {navbarHeight = 186}
+        else {navbarHeight = 45}
         window.scrollTo({top: targetElement.offsetTop - navbarHeight - 4, left: 0, behaviour: 'auto'})
     })
 }
