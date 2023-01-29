@@ -14,8 +14,13 @@ body {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
 }
-
-
+._odd-section-colors{
+    background-color: var(--color-header-background);
+    color: var(--color-navbar-background);
+}
+._even-section-colors{
+    background-color: var(--color-navbar-background);
+}
 
 /* Navbar */
 #_navbar{
@@ -57,8 +62,6 @@ body {
 
 /* Presentation header */
 #_presentationHeader {
-    background-color: var(--color-header-background);
-    color: var(--color-navbar-background);
     padding: 160px 0 220px 0;
     align-items: center;    
 }
@@ -81,7 +84,6 @@ body {
 
 /* Portfolio main */
 #_portfolio{
-    background-color: var(--color-navbar-background);
     min-height: 500px;
 }
 ._portfolio .col-sm{
@@ -153,11 +155,16 @@ body {
 /* About me article */
 #_aboutme{    
     min-height: 500px;
-    background-color: var(--color-header-background);
-    color: var(--color-navbar-background);
 }
 
 
+
+/* Contact section */
+#_contact-section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
 /* Contact form */
 #_contact-form{
@@ -215,6 +222,4 @@ body {
 
 /* Copyright */
 #_copyright{
-    background-color: var(--color-header-background);
-    color: var(--color-navbar-background);
 }

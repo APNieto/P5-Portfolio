@@ -40,7 +40,7 @@
 
 
 
-    <header id="_presentationHeader" class="d-flex flex-column">
+    <header id="_presentationHeader" class="d-flex flex-column _odd-section-colors">
         <img src="./images/foto-perfil-media1.jpg" alt="Foto de Alejandro Nieto">
         <h3>Alejandro Nieto <span class="emoji"></span></h3>        
         <span id="_header-separator">▪ ▫ ▪ ▫ ▪ ▫ ▪ ▫ ▪ ▫ ▪ ▫ ▪ 🔹 ▫ ▪ ▫  ▪ ▫ ▪ ▫ ▪ ▫ ▪ ▫ ▪ ▫</span>
@@ -49,7 +49,7 @@
 
 
 
-    <main id="_portfolio" class="_portfolio">
+    <main id="_portfolio" class="_portfolio _even-section-colors">
         <div class="_sectionHeading d-flex">
             <h2>Portfolio</h2>
         </div>     
@@ -111,7 +111,7 @@
 
 
 
-    <article id="_aboutme" class="_aboutme">
+    <article id="_aboutme" class="_aboutme _odd-section-colors">
         <div class="_sectionHeading d-flex">
             <h2>About me</h2>
         </div>
@@ -123,49 +123,51 @@
     </article>
 
 
-    <form id="_contact-form" class="d-flex flex-column" action="https://formspree.io/f/xrgdkjpy" method="POST" target="secret_iframe">
-        <h2>Drop me a line or two!</h2>
-        <div id="_name-input" class="_input-div">
-            <input id="name" class="_input-element" name="name" type="text" placeholder="Enter your name...">
-            <label for="name" class="_input-label">Name</label>
-            <div id="_invalid-name" class="_invalid-feedback invisible">Please enter your name</div>
-        </div>
-        <div id="_email-input" class="_input-div">            
-            <input id="email" class="_input-element" name="email" type="text" placeholder="Enter your email address...">
-            <label for="email" class="_input-label">Email</label>
-            <div id="_invalid-email" class="_invalid-feedback invisible">Please enter your email address</div>
-        </div>
-        <div id="_message-input" class="_input-div">            
-            <textarea id="message" class="_input-element" name="message" cols="30" rows="10" placeholder="Enter your message..."></textarea>
-            <label for="message" class="_input-label">Message</label>
-            <div id="_invalid-message" class="_invalid-feedback invisible">Please enter a message</div> 
-        </div>
-        <button id="_submit-button" type="submit" disabled>Send</button>
-        <div id="_thanks-message" class="invisible">Thank you! I will answer you as soon as possible.</div>
-    </form>
-    <iframe id="_secret-iframe" name="secret_iframe" src="" frameborder="0"></iframe>
+    <section id="_contact-section" class="_even-section-colors">
+        <form id="_contact-form" class="d-flex flex-column" action="https://formspree.io/f/xrgdkjpy" method="POST" target="secret_iframe">
+            <h2>Drop me a line or two!</h2>
+            <div id="_name-input" class="_input-div">
+                <input id="name" class="_input-element" name="name" type="text" placeholder="Enter your name...">
+                <label for="name" class="_input-label">Name</label>
+                <div id="_invalid-name" class="_invalid-feedback invisible">Please enter your name</div>
+            </div>
+            <div id="_email-input" class="_input-div">            
+                <input id="email" class="_input-element" name="email" type="text" placeholder="Enter your email address...">
+                <label for="email" class="_input-label">Email</label>
+                <div id="_invalid-email" class="_invalid-feedback invisible">Please enter your email address</div>
+            </div>
+            <div id="_message-input" class="_input-div">            
+                <textarea id="message" class="_input-element" name="message" cols="30" rows="10" placeholder="Enter your message..."></textarea>
+                <label for="message" class="_input-label">Message</label>
+                <div id="_invalid-message" class="_invalid-feedback invisible">Please enter a message</div> 
+            </div>
+            <button id="_submit-button" type="submit" disabled>Send</button>
+            <div id="_thanks-message" class="invisible">Thank you! I will answer you as soon as possible.</div>
+        </form>
+        <iframe id="_secret-iframe" name="secret_iframe" src="" frameborder="0"></iframe>
 
-    <section id="_social">
-        <h2>Let's keep in touch</h2>
-        <div class="_social-links">            
-            <a href="https://www.instagram.com/alejandroxnieto/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>                      
-            <a href="https://wa.me/5491163593389?text=Hi+Alejandro%21+I+saw+your+web+developer+portfolio." target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            <a href="https://www.facebook.com/funky.azul/" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>
-            </a>            
-            <a href="mailto:nietoalen@hotmail.com" target="_blank">
-                <i class="fa-regular fa-envelope"></i>
-            </a>            
-        </div>
+        <section id="_social">
+            <h2>Let's keep in touch</h2>
+            <div class="_social-links">            
+                <a href="https://www.instagram.com/alejandroxnieto/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>                      
+                <a href="https://wa.me/5491163593389?text=Hi+Alejandro%21+I+saw+your+web+developer+portfolio." target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.facebook.com/funky.azul/" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>            
+                <a href="mailto:nietoalen@hotmail.com" target="_blank">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>            
+            </div>
+        </section>
     </section>
 
 
 
-    <footer id="_copyright" class="_footer2">
+    <footer id="_copyright" class="_footer2 _odd-section-colors">
         Copyright © 2023 Alejandro Nieto
     </footer>   
 
