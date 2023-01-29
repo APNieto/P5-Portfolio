@@ -85,6 +85,7 @@ body {
 /* Portfolio main */
 #_portfolio{
     min-height: 500px;
+    text-align: center;
 }
 ._portfolio .col-sm{
     text-align: center;
@@ -154,9 +155,9 @@ body {
 
 /* About me article */
 #_aboutme{    
-    min-height: 500px;
+    min-height: 500px;    
+    text-align: center;
 }
-
 
 
 /* Contact section */
