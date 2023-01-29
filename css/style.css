@@ -3,6 +3,7 @@
 :root {
     --color-general-background: #fafafa;
     --color-navbar-background: #f8eade;
+    --color-header-background: #19323c;    
     --color-shadow: #ff7474;
     --color-logo: #c02f78;
     --color-profile: rgb(63,57,67);    
@@ -56,8 +57,9 @@ body {
 
 /* Presentation header */
 #_presentationHeader {
-    background-color: rgba(117, 131, 126, 0.801);
-    padding: 160px 0 300px 0;
+    background-color: var(--color-header-background);
+    color: var(--color-navbar-background);
+    padding: 160px 0 220px 0;
     align-items: center;    
 }
 #_presentationHeader > img {        
@@ -78,7 +80,9 @@ body {
 
 
 /* Portfolio main */
-#_projects-container{    
+#_portfolio{
+    background-color: var(--color-navbar-background);
+    min-height: 500px;
 }
 ._portfolio .col-sm{
     text-align: center;
@@ -148,6 +152,9 @@ body {
 
 /* About me article */
 #_aboutme{    
+    min-height: 500px;
+    background-color: var(--color-header-background);
+    color: var(--color-navbar-background);
 }
 
 
@@ -208,5 +215,6 @@ body {
 
 /* Copyright */
 #_copyright{
-    background-color: rgb(63, 57, 67);
+    background-color: var(--color-header-background);
+    color: var(--color-navbar-background);
 }
