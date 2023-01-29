@@ -29,4 +29,8 @@ https://pledu.plataforma5.la/curso-introductorio---front-end/06--proyecto*-tu-po
 
 .Mobile: remove extra room to the right
 
-.Create gifs for project thumbnails
+.Create gifs for project thumbnails (optional)
+
+.Make some texts non-selectable
+
+.Correct navbar scrolling, responsive

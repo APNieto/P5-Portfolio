@@ -2,7 +2,7 @@
 // Navbar
 const _navbar = document.getElementById('_navbar')
 const navbarBrand = document.getElementsByClassName('navbar-brand')[0]
-const navLink = document.getElementsByClassName('nav-link')
+const navLinks = document.getElementsByClassName('nav-link')
 // Portfolio
 const projectsContainer = document.getElementById('_projects-container')
 const projectBoxes = document.getElementsByClassName('_project-boxes')
@@ -27,13 +27,24 @@ window.onscroll = function(event) {
     if(document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
         _navbar.style.padding = '0'
         navbarBrand.style.fontSize = '1.4rem'        
-        for (let ele of navLink) {ele.style.fontSize = '1.2rem'}
+        for (let ele of navLinks) {ele.style.fontSize = '1.2rem'}
     } else {
         _navbar.style.padding = '20px 0'
         navbarBrand.style.fontSize = '1.8rem'
-        for (let ele of navLink) {ele.style.fontSize = '1.4rem'}
+        for (let ele of navLinks) {ele.style.fontSize = '1.4rem'}
     }    
 }
+
+// Correct section scrolling to navbar's height; responsive
+for (let navLink of navLinks) {
+    navLink.addEventListener('click', (event) => {
+        event.preventDefault()
+        let targetElement = document.querySelector(navLink.hash)
+        let navbarHeight = document.getElementById('_navbar').offsetHeight
+        window.scrollTo({top: targetElement.offsetTop - navbarHeight - 4, left: 0, behaviour: 'auto'})
+    })
+}
+
 
 // Translates and fades in project boxes from the left side; responsive
 const observerLargeScreen = new IntersectionObserver(entries => {
@@ -141,27 +152,3 @@ function checkInputValidity() {
     }
 }
 
-
-
-
-
-
-
-// jQuery: Navbar buttons scroll to destination.
-// Source: https://www.w3docs.com/snippets/javascript/how-to-create-smooth-scrolling-when-clicking-an-anchor-link.html
-// $(document).ready(function() {
-//     let viewportWidth = window.innerWidth;
-//     if (viewportWidth >= 992) {
-//         $("a").click(function(event) {
-//             $("html, body").animate({            
-//                     scrollTop: $($(this).attr("href")).offset().top - 58
-//                 }, 300, "smooth");
-//             });           
-//     } else {
-//         $("a").click(function(event) {
-//             $("html, body").animate({            
-//                     scrollTop: $($(this).attr("href")).offset().top - 186
-//                 }, 180, "linear");
-//             });    
-//     }    
-// });   
