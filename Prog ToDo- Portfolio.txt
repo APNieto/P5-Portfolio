@@ -34,3 +34,7 @@ https://pledu.plataforma5.la/curso-introductorio---front-end/06--proyecto*-tu-po
 .Make some texts non-selectable
 
 .Correct navbar scrolling, responsive  X
+
+.llline and icons8 attributions
+https://fffuel.co/llline/
+<a target="_blank" href="https://icons8.com/icon/KarJz0n4bZSj/general-warning-sign">General Warning Sign</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>

@@ -41,9 +41,12 @@
 
 
     <header id="_presentationHeader" class="d-flex flex-column _odd-section-colors">
-        <img src="./images/foto-perfil-media1.jpg" alt="Foto de Alejandro Nieto">
-        <h3>Alejandro Nieto <span class="emoji"></span></h3>        
-        <span id="_header-separator">▪ ▫ ▪ ▫ ▪ ▫ ▪ ▫ ▪ ▫ ▪ ▫ ▪ 🔹 ▫ ▪ ▫  ▪ ▫ ▪ ▫ ▪ ▫ ▪ ▫ ▪ ▫</span>
+        <img id="_header-picture" src="./images/foto-perfil-media1.jpg" alt="Foto de Alejandro Nieto">
+        <h3>Alejandro Nieto</h3>        
+        <div id="_header-separator">            
+            <img id="_separator-left" src="./images/llline.svg" alt="">
+            <img id="_separator-right" src="./images/llline (1).svg" alt="">
+        </div>
         <p>Musician, front-end web-developer</p>
     </header>
 
@@ -53,6 +56,7 @@
         <div class="_sectionHeading">
             <h2>Portfolio</h2>
         </div>     
+        <p>These are some of the sites I've working on lately.</p>
         <div class="container">
             <div id="_projects-container" class="row">
                 <div class="col-sm _project-boxes _project-boxes-invisible">
@@ -115,18 +119,22 @@
         <div class="_sectionHeading">
             <h2>About me</h2>
         </div>
-        <div class="_presentation-text">
+        <div id="_presentation-text">
             <p>I am pianist based in Buenos Aires.</p>
             <p>Studying in music school and recording and playing songs with my bands was a fantastic experience.</p>
-            <p>Software and web-development is a field I recently started to get to know.</p>
+            <p>But some time ago I started to learn software and web-development,</p>
+            <p>what undoubtedly expanded my horizon of possibilities.</p>
             <p>And so far I am loving it.</p>
+            <span>⭐</span>
         </div>      
     </article>
 
 
     <section id="_contact-section" class="_even-section-colors">
         <form id="_contact-form" class="d-flex flex-column" action="https://formspree.io/f/xrgdkjpy" method="POST" target="secret_iframe">
-            <h2>Drop me a line or two!</h2>
+            <div class="_socialHeading _sectionHeading">
+                <h2>Drop me a line or two!</h2>
+            </div>
             <div id="_name-input" class="_input-div">
                 <input id="name" class="_input-element" name="name" type="text" placeholder="Enter your name...">
                 <label for="name" class="_input-label">Name</label>
@@ -148,7 +156,9 @@
         <iframe id="_secret-iframe" name="secret_iframe" src="" frameborder="0"></iframe>
 
         <section id="_social">
-            <h2>Let's keep in touch</h2>
+            <div class="_socialHeading _sectionHeading">
+                <h2>Let's keep in touch</h2>
+            </div>
             <div class="_social-links">            
                 <a href="https://www.instagram.com/alejandroxnieto/" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
@@ -169,7 +179,9 @@
 
 
     <footer id="_copyright" class="_footer2 _odd-section-colors">
-        Copyright © 2023 Alejandro Nieto
+        <p>Copyright © 2023 Alejandro Nieto</p>
+        <p>Separator lines by <a target="_blank" href="https://fffuel.co/llline/">fffuel</a></p>
+        <p><a target="_blank" href="https://icons8.com/icon/KarJz0n4bZSj/general-warning-sign">General Warning Sign</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>        
     </footer>   
 
 </body>

@@ -4,7 +4,7 @@
     --color-general-background: #fafafa;
     --color-navbar-background: #f8eade;
     --color-header-background: #19323c;    
-    --color-shadow: #ff7474;
+    --color-shadow: hsl(0, 100%, 73%);
     --color-logo: #c02f78;
     --color-profile: rgb(63,57,67);    
 }
@@ -13,6 +13,17 @@ body {
     background-color: var(--color-general-background);
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
+}
+._sectionHeading{
+    padding: 15px;    
+}
+._sectionHeading > *{
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+._socialHeading > *{
+    font-weight: bold;
+    font-size: 2rem;
 }
 ._odd-section-colors{
     background-color: var(--color-header-background);
@@ -65,16 +76,30 @@ body {
     padding: 160px 0 220px 0;
     align-items: center;    
 }
-#_presentationHeader > img {        
+#_header-picture {        
     margin-top: 30px;    
     border: 2px solid rgb(63,57,67);
     border-radius: 50%;       
-    box-shadow: 3px 3px 0px var(--color-shadow);     
+    box-shadow: 3px 3px 0px hsl(0, 100%, 60%);     
 }
 #_presentationHeader h3{
     margin-top: 35px;
+    margin-bottom: 0;
     font-size: 2.8rem;
     font-weight: 500;
+}
+#_header-separator{
+    display: flex;
+    justify-content: center;
+}
+#_header-separator > img {
+    width: 16%;
+}
+#_separator-left{
+    margin-right: 4px;
+}
+#_separator-right{
+    margin-left: 4px;
 }
 #_presentationHeader p{
     font-size: 1.5rem;
@@ -84,8 +109,13 @@ body {
 
 /* Portfolio main */
 #_portfolio{
+    padding: 80px 0 120px;
     min-height: 500px;
     text-align: center;
+}
+#_portfolio > p {
+ font-size: 1.2rem;
+ padding-bottom: 20px;
 }
 ._portfolio .col-sm{
     text-align: center;
@@ -155,8 +185,12 @@ body {
 
 /* About me article */
 #_aboutme{    
-    min-height: 500px;    
+    padding: 80px 0 100px;
+    min-height: 400px;    
     text-align: center;
+}
+#_presentation-text > span {
+    font-size: 1.5rem;
 }
 
 
