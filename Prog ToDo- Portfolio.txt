@@ -11,7 +11,7 @@ https://pledu.plataforma5.la/curso-introductorio---front-end/06--proyecto*-tu-po
 .Add entry-from-left animation to portfolio links  X
     See: https://www.youtube.com/watch?v=T33NN_pPeNI
 
-.Change About me text
+.Change About me text  X
 
 .Contact form  X
 
@@ -21,20 +21,27 @@ https://pledu.plataforma5.la/curso-introductorio---front-end/06--proyecto*-tu-po
 
 .More space in general for each section, imitating https://startbootstrap.com/previews/freelancer
 
-.Favicon
 
-.Font
+.Font  X
 
 .Quality of profile picture  X
 
-.Mobile: remove extra room to the right
-
-.Create gifs for project thumbnails (optional)
-
-.Make some texts non-selectable
+.Mobile: remove extra room to the right (stopped happening - ?)
 
 .Correct navbar scrolling, responsive  X
 
-.llline and icons8 attributions
+.llline and icons8 attributions  X
 https://fffuel.co/llline/
 <a target="_blank" href="https://icons8.com/icon/KarJz0n4bZSj/general-warning-sign">General Warning Sign</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+.Create gifs for project thumbnails (optional)
+
+.Scrolling behaviour should go a bit further  X
+
+.Make some texts non-selectable
+
+.Favicon (a keyboard icon)
+
+.Mobile: text margins
+
+.Mobile: picture size

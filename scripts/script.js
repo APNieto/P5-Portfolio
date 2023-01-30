@@ -43,7 +43,7 @@ for (let navLink of navLinks) {
         let navbarHeight
         if (window.innerWidth < 992) {navbarHeight = 186}
         else {navbarHeight = 45}
-        window.scrollTo({top: targetElement.offsetTop - navbarHeight - 4, left: 0, behaviour: 'auto'})
+        window.scrollTo({top: targetElement.offsetTop - navbarHeight + 5, left: 0, behaviour: 'auto'})
     })
 }
 
