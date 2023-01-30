@@ -168,6 +168,9 @@ body {
     ._project-boxes:nth-child(5){
         transition-delay: 100ms;
     }
+    ._project-boxes figure:active{
+        transform: scale(1.07);
+    }
 }
 @media (max-width: 575px){
     ._project-boxes:nth-child(2){
