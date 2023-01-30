@@ -84,6 +84,7 @@ submitButton.addEventListener('click', () => {
     nameInput.disabled = true
     emailInput.disabled = true
     messageInput.disabled = true
+    submitButton.disabled = true
 })
 
 // Form validation: name and message input

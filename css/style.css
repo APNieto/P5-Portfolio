@@ -21,10 +21,6 @@ body {
     font-weight: bold;
     font-size: 2.4rem;
 }
-._socialHeading > *{
-    font-weight: bold;
-    font-size: 2rem;
-}
 ._odd-section-colors{
     background-color: var(--color-header-background);
     color: var(--color-navbar-background);
@@ -32,6 +28,9 @@ body {
 ._even-section-colors{
     background-color: var(--color-navbar-background);
 }
+
+
+
 
 /* Navbar */
 #_navbar{
@@ -71,10 +70,13 @@ body {
 }
 
 
+
+
 /* Presentation header */
 #_presentationHeader {
     padding: 160px 0 220px 0;
     align-items: center;    
+    text-align: center;
 }
 #_header-picture {        
     margin-top: 30px;    
@@ -104,6 +106,7 @@ body {
 #_presentationHeader p{
     font-size: 1.5rem;
 }
+
 
 
 
@@ -183,6 +186,7 @@ body {
 
 
 
+
 /* About me article */
 #_aboutme{    
     padding: 80px 0 100px;
@@ -194,33 +198,58 @@ body {
 }
 
 
+
+
 /* Contact section */
 #_contact-section{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0 10px;
 }
 
 /* Contact form */
 #_contact-form{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+._socialHeading > *{
+    font-weight: bold;
+    font-size: 2rem;
+}
+._socialHeading{
+    padding-left: 0;
+    padding-right: 0;
 }
 ._input-div{
     width: fit-content;
     position: relative;
-    margin: 0 auto;
+    margin: 0;
+    padding: 15px 0;
 }
 ._input-label{
     position: absolute;
     top: 0;
     left: 0;
+    color: #212529be;
     transition: opacity 0.1s, transform 0.1s;
+    font-size: 1.4rem;    
+    cursor: text;
 }
 ._input-element{
-    background-color: var(--color-general-background);
+    width: max(280px, 18vw);    
+    padding: 10px 0 5px;
+    background-color: var(--color-navbar-background);
     border-style: none none solid none;
     border-width: 1px;
+    font-size: 1.5rem;
     transition: border-color 200ms;
+}
+textarea{
+    height: 180px;
 }
 ._input-element:focus{
     outline: none;
@@ -240,21 +269,58 @@ body {
     background-image: url(../images/icons8-general-warning-sign-48.png);
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 1rem;
+    background-size: 1.3rem;
+}
+#_submit-button{
+    padding: 5px 12px;
+    width: 100px;
+    background-color: #3b5b69f8;
+    border-radius: 4px;
+    color: var(--color-general-background);
+    align-self: flex-start;
+}
+#_submit-button:disabled{
+    background-color: #3b5b694f;
+}
+#_submit-button:focus{
+    outline: 1px solid black;
 }
 #_secret-iframe{
-    width: 0;
-    height: 0;
+    display: none;
+}
+#_thanks-message{
+    text-align: center;
+}
+#_thanks-message > p{
+    margin-bottom: 4px;
+    font-style: italic;
+    font-weight: bold;
 }
 
 
-/* Footer social */
-#_social a{
+/* Social networks section */
+#_social-links-container{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 60px;
+}
+._social-links{
+    font-size: 2rem;
     text-decoration: none;
+    color: var(--color-logo);
 }
+
 
 
 
 /* Copyright */
 #_copyright{
+    padding: 10px 0;
+    text-align: center;
+}
+#_copyright > p{    
+    font-size: 0.8rem;
+    padding: 2px 0;
+    margin: 0;  
 }

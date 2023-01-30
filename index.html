@@ -47,7 +47,7 @@
             <img id="_separator-left" src="./images/llline.svg" alt="">
             <img id="_separator-right" src="./images/llline (1).svg" alt="">
         </div>
-        <p>Musician, front-end web-developer</p>
+        <p>Musician, front-end web developer</p>
     </header>
 
 
@@ -129,52 +129,59 @@
         </div>      
     </article>
 
-
-    <section id="_contact-section" class="_even-section-colors">
-        <form id="_contact-form" class="d-flex flex-column" action="https://formspree.io/f/xrgdkjpy" method="POST" target="secret_iframe">
-            <div class="_socialHeading _sectionHeading">
-                <h2>Drop me a line or two!</h2>
+    <div class="_even-section-colors">
+        <section id="_contact-section" class="_even-section-colors">
+            <div id="_form-container">                
+                <div class="_socialHeading _sectionHeading">
+                    <h2>Drop me a line or two!</h2>
+                </div>
+                <form id="_contact-form" class="d-flex flex-column" action="https://formspree.io/f/xrgdkjpy" method="POST" target="secret_iframe">
+                    <div id="_name-input" class="_input-div">
+                        <input id="name" class="_input-element" name="name" type="text" placeholder="Enter your name...">
+                        <label for="name" class="_input-label">Name</label>
+                        <div id="_invalid-name" class="_invalid-feedback invisible">Please enter your name</div>
+                    </div>
+                    <div id="_email-input" class="_input-div">            
+                        <input id="email" class="_input-element" name="email" type="text" placeholder="Enter your email address...">
+                        <label for="email" class="_input-label">Email</label>
+                        <div id="_invalid-email" class="_invalid-feedback invisible">Please enter your email address</div>
+                    </div>
+                    <div id="_message-input" class="_input-div">            
+                        <textarea id="message" class="_input-element" name="message" cols="30" rows="10" placeholder="Enter your message..."></textarea>
+                        <label for="message" class="_input-label">Message</label>
+                        <div id="_invalid-message" class="_invalid-feedback invisible">Please enter a message</div> 
+                    </div>
+                    <button id="_submit-button" type="submit" disabled>Send</button>
+                    <div id="_thanks-message" class="invisible">
+                        <p>Thank you!</p>
+                        <p>I will answer you as soon as possible.</p>
+                    </div>
+                </form>
             </div>
-            <div id="_name-input" class="_input-div">
-                <input id="name" class="_input-element" name="name" type="text" placeholder="Enter your name...">
-                <label for="name" class="_input-label">Name</label>
-                <div id="_invalid-name" class="_invalid-feedback invisible">Please enter your name</div>
-            </div>
-            <div id="_email-input" class="_input-div">            
-                <input id="email" class="_input-element" name="email" type="text" placeholder="Enter your email address...">
-                <label for="email" class="_input-label">Email</label>
-                <div id="_invalid-email" class="_invalid-feedback invisible">Please enter your email address</div>
-            </div>
-            <div id="_message-input" class="_input-div">            
-                <textarea id="message" class="_input-element" name="message" cols="30" rows="10" placeholder="Enter your message..."></textarea>
-                <label for="message" class="_input-label">Message</label>
-                <div id="_invalid-message" class="_invalid-feedback invisible">Please enter a message</div> 
-            </div>
-            <button id="_submit-button" type="submit" disabled>Send</button>
-            <div id="_thanks-message" class="invisible">Thank you! I will answer you as soon as possible.</div>
-        </form>
-        <iframe id="_secret-iframe" name="secret_iframe" src="" frameborder="0"></iframe>
-
-        <section id="_social">
-            <div class="_socialHeading _sectionHeading">
-                <h2>Let's keep in touch</h2>
-            </div>
-            <div class="_social-links">            
-                <a href="https://www.instagram.com/alejandroxnieto/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>                      
-                <a href="https://wa.me/5491163593389?text=Hi+Alejandro%21+I+saw+your+web+developer+portfolio." target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-                <a href="https://www.facebook.com/funky.azul/" target="_blank">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>            
-                <a href="mailto:nietoalen@hotmail.com" target="_blank">
-                    <i class="fa-regular fa-envelope"></i>
-                </a>            
-            </div>
+            <iframe id="_secret-iframe" name="secret_iframe" src="" frameborder="0"></iframe>
+            
+            <section id="_social">
+                <div class="_socialHeading _sectionHeading">
+                    <h2>Let's keep in touch</h2>
+                </div>
+                <div id="_social-links-container">            
+                    <a class="_social-links" href="https://www.instagram.com/alejandroxnieto/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>                      
+                    <a class="_social-links" href="https://wa.me/5491163593389?text=Hi+Alejandro%21+I+saw+your+web+developer+portfolio." target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a class="_social-links" href="https://www.facebook.com/funky.azul/" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>            
+                    <a class="_social-links" href="mailto:nietoalen@hotmail.com" target="_blank">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>            
+                </div>
+            </section>
+            
         </section>
-    </section>
+    </div>
 
 
 
@@ -182,7 +189,7 @@
         <p>Copyright © 2023 Alejandro Nieto</p>
         <p>Separator lines by <a target="_blank" href="https://fffuel.co/llline/">fffuel</a></p>
         <p><a target="_blank" href="https://icons8.com/icon/KarJz0n4bZSj/general-warning-sign">General Warning Sign</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>        
-    </footer>   
+    </footer>      
 
 </body>
 </html>
