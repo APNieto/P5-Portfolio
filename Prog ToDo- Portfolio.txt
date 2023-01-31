@@ -43,6 +43,6 @@ https://fffuel.co/llline/
 
 .Mobile: picture size  X
 
-.Make some texts non-selectable
+.Make some texts non-selectable  X
 
-.Color animation for picture shadow
+.Color animation for picture shadow  X

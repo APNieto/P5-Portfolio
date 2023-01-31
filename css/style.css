@@ -16,6 +16,7 @@ body {
 }
 ._sectionHeading{
     padding: 15px;    
+    user-select: none;
 }
 ._sectionHeading > *{
     font-weight: bold;
@@ -27,6 +28,9 @@ body {
 }
 ._even-section-colors{
     background-color: var(--color-navbar-background);
+}
+._non-selectable{
+    user-select: none;
 }
 
 
@@ -82,7 +86,12 @@ body {
     margin-top: 30px;    
     border: 2px solid rgb(63,57,67);
     border-radius: 50%;       
-    box-shadow: 3px 3px 0px hsl(0, 100%, 60%);     
+    box-shadow: 3px 3px 0px hsl(0, 100%, 56%);     
+    animation: header-picture 2s linear 1s infinite alternate;
+}
+@keyframes header-picture {
+    from {box-shadow: 3px 3px 0px hsl(0, 100%, 56%);}
+    to {box-shadow: 3px 3px 0px hsl(12, 100%, 70%);}
 }
 #_presentationHeader h3{
     margin-top: 35px;
@@ -108,7 +117,7 @@ body {
 }
 @media (max-width: 576px) {
     #_header-picture {        
-        width: 260px;
+        width: 275px;
     }
     #_presentationHeader h3{
         font-size: 2.2rem;
