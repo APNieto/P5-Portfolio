@@ -152,6 +152,10 @@ body {
 ._project-boxes{
     transition: 700ms;    
 }
+._project-boxes figcaption{
+    margin-top: 14px;
+    font-weight: bold;
+}
 ._project-boxes:nth-child(2){
     transition-delay: 100ms;
 }
