@@ -106,6 +106,17 @@ body {
 #_presentationHeader p{
     font-size: 1.5rem;
 }
+@media (max-width: 576px) {
+    #_header-picture {        
+        width: 260px;
+    }
+    #_presentationHeader h3{
+        font-size: 2.2rem;
+    }
+    #_presentationHeader p{
+        font-size: 1.2rem;
+    }
+}
 
 
 
@@ -117,8 +128,9 @@ body {
     text-align: center;
 }
 #_portfolio > p {
- font-size: 1.2rem;
- padding-bottom: 20px;
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    margin: 0 12px;
 }
 ._portfolio .col-sm{
     text-align: center;
@@ -195,6 +207,9 @@ body {
     padding: 80px 0 100px;
     min-height: 400px;    
     text-align: center;
+}
+#_presentation-text > p {
+    margin: 0 12px;
 }
 #_presentation-text > span {
     font-size: 1.5rem;

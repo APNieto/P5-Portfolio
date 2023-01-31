@@ -21,7 +21,6 @@ https://pledu.plataforma5.la/curso-introductorio---front-end/06--proyecto*-tu-po
 
 .More space in general for each section, imitating https://startbootstrap.com/previews/freelancer
 
-
 .Font  X
 
 .Quality of profile picture  X
@@ -38,10 +37,12 @@ https://fffuel.co/llline/
 
 .Scrolling behaviour should go a bit further  X
 
+.Favicon (a keyboard icon)  X
+
+.Mobile: text margins  X
+
+.Mobile: picture size  X
+
 .Make some texts non-selectable
 
-.Favicon (a keyboard icon)
-
-.Mobile: text margins
-
-.Mobile: picture size
+.Color animation for picture shadow
